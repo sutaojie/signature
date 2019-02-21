@@ -1,0 +1,88 @@
+/* pages/test/test.wxss */
+page{
+    max-height: 100vh;
+}
+movable-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200%;
+    width: 50%;
+    background: #1AAD19;
+    color: #fff;
+}
+
+movable-area {
+    height: 70vh;
+    width: 400%;
+    background-color: #ccc;
+    overflow: hidden;
+}
+
+.signature{
+}
+.scroll-view_X{
+    width: 100%;
+    height: 70vh;
+    border: 1rpx solid red;
+}
+.signature_image_text{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.signature_image{
+    z-index: 1;
+    width: 200%;
+    height: 100%;
+}
+.signature_image > image{
+    width: 100%;
+    height: 100%;
+}
+.signature_text_win{
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    min-height: 200rpx;
+}
+.signature_text{
+    display: inline-block;
+    margin-right: -40rpx;
+    padding: 20rpx 20rpx;
+    writing-mode: vertical-rl;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    color: #82a1f2;
+}
+.signature_date_info{
+    height: 30vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.signature_info_image_win{
+    flex-grow: 2;
+}
+.signature_info_image{
+    width: 200rpx;
+    height: 200rpx;
+}
+.signature_info_image > image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.signature_date_win{
+    flex-grow: 1;
+    margin-left: 10%;
+}
+.signature_date{
+    color: #000;
+}

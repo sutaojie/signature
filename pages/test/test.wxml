@@ -1,0 +1,66 @@
+<!--pages/test/test.wxml-->
+<view class="signature">
+    <!--
+    <movable-area
+            class="scroll-view_X"
+    >
+        <movable-view class="signature_image_text"
+                      direction="all"
+                      htouchmove="toright"
+                      bindchange="tochange"
+        >
+            <view class="signature_image">
+                <image src="{{image_src}}"></image>
+            </view>
+            <view class="signature_text_win">
+                <text class="signature_text">
+                    人终有一死,1
+                </text>
+            </view>
+            xxx
+        </movable-view>
+
+        <view class="signature_image_text" >
+            <view class="signature_image">
+                <image src="{{image_src}}"></image>
+            </view>
+            <view class="signature_text_win">
+                <text class="signature_text">
+                    或死于泰山
+                </text>
+            </view>
+        </view>
+    </movable-area>
+    -->
+    <movable-area scale-area>
+        <movable-view direction="horizontal" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="4" scale-value="{{scale}}"
+                      out-of-bounds="true"
+        >
+            <view class="signature_image_text" >
+                <view class="signature_image">
+                    <image src="{{image_src}}"></image>
+                </view>
+                <view class="signature_text_win">
+                    <text class="signature_text">
+                        或死于泰山
+                    </text>
+                </view>
+            </view>
+        </movable-view>
+    </movable-area>
+    <view class="signature_date_info">
+        <view class="signature_date_win">
+            <text class="signature_date">
+                2019-02-21
+            </text>
+            <text class="signature_week">
+                星期四
+            </text>
+        </view>
+        <view class="signature_info_image_win">
+            <view class="signature_info_image">
+                <image src="{{image_src}}"></image>
+            </view>
+        </view>
+    </view>
+</view>
